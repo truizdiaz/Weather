@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AppClima"
+    }
+  },
+  "defaultProject": "AppClima",
+  "cli": {
+    "analytics": "70c8f612-9a25-413f-986d-6373e021bb90"
+  }
 }
