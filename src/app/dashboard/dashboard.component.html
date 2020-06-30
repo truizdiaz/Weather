@@ -4,10 +4,11 @@
             <img [src]="urlImage" alt="" width="300px" height="300px">
         </div>
         <div class="col-lg-6">
-            <input type="text" placeholder="City Name" class="form-control form-control-lg">
-            <button type="button" class="btn btn-primary btn-block btn-lg mt-4">GET WHEATER</button>
+            <input type="text" placeholder="City Name" class="form-control form-control-lg" [(ngModel)]="city">
+            <button type="button" class="btn btn-primary btn-block btn-lg mt-4" 
+                    (click)="getWheater()">GET WHEATER</button>
             <br>
-            <div class="card">
+            <div class="card" *ngIf="query">
                 <div class="card-body">
                     <p><b>Temperature:</b></p>
                     <p><b>Humidity:</b></p>
